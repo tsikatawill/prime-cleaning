@@ -14,6 +14,7 @@ export default function Home() {
           content="Cleaning Made Easy. Living Made Better"
           key="desc"
         />
+        <meta property="og:image" content="/images/og-image.png" />
         <link rel="icon" href="/images/favicon-light.svg" type="image/x-icon" />
       </Head>
 
