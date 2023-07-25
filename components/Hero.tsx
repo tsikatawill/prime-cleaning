@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Container from "./Container";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -16,12 +17,15 @@ const Hero = () => {
             </p>
           </div>
 
-          <button className="h-10 bg-white text-black px-3 rounded-md">
+          <Link
+            href="/#quote"
+            className="h-10 w-fit mx-auto sm:mx-0 grid place-content-center bg-white text-black px-3 rounded-md"
+          >
             Get a quote
-          </button>
+          </Link>
         </div>
 
-        <div className="row-start-1 sm:col-start-2 grid place-content-center sm:place-content-start w-80 mx-auto sm:w-auto">
+        <div className="row-start-1 sm:col-start-2 grid place-content-center sm:place-content-start mx-auto">
           <Image src="/images/hero.png" width={400} height={400} alt="hero" />
         </div>
       </div>
