@@ -17,7 +17,7 @@ const Navbar = () => {
           />
         </Link>
 
-        <ul className="flex gap-4 font-semibold text-md">
+        <ul className="hidden sm:flex gap-4 font-semibold text-md">
           <li>
             <Link href="/">Home</Link>
           </li>
@@ -25,23 +25,47 @@ const Navbar = () => {
             <Link href="/">About</Link>
           </li>
           <li>
-            <Link href="/">Services</Link>
+            <Link href="/#contact">Contact</Link>
+          </li>
+          <li>
+            <Link href="/#services">Services</Link>
+          </li>
+          <li>
+            <Link href="/#quote">Quote</Link>
           </li>
         </ul>
 
-        <Sidebar>
-          <ul className="gap-4 font-semibold text-md">
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="/">About</Link>
-            </li>
-            <li>
-              <Link href="/">Services</Link>
-            </li>
-          </ul>
-        </Sidebar>
+        <div className="block sm:hidden">
+          <Sidebar>
+            <ul className="flex flex-col gap-4 font-semibold text-md">
+              <li className="p-2 hover:bg-slate-100 rounded-md">
+                <Link className="w-full h-full block" href="/">
+                  Home
+                </Link>
+              </li>
+              <li className="p-2 hover:bg-slate-100 rounded-md">
+                <Link className="w-full h-full block" href="/">
+                  About
+                </Link>
+              </li>
+              <li className="p-2 hover:bg-slate-100 rounded-md">
+                <Link className="w-full h-full block" href="/#contact">
+                  Contact
+                </Link>
+              </li>
+              <li className="p-2 hover:bg-slate-100 rounded-md">
+                <Link className="w-full h-full block" href="/#services">
+                  Services
+                </Link>
+              </li>
+              <li className="p-2 hover:bg-slate-100 rounded-md">
+                <Link className="w-full h-full block" href="/#quote">
+                  Quote
+                </Link>
+              </li>
+            </ul>
+          </Sidebar>
+        </div>
       </Container>
     </nav>
   );
