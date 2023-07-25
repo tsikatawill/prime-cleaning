@@ -1,9 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-font-family: "Poppins", sans-serif;
+html {
+  scroll-behavior: smooth !important;
+  scroll-padding-top: 1rem;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.custom-scrollbar.scroll-x::-webkit-scrollbar {
+  height: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-tertiary rounded-full;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-tertiary bg-opacity-30 rounded-full;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-accent;
 }
