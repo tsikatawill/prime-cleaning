@@ -2,7 +2,6 @@ import React from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import { AnimatePresence, motion } from "framer-motion";
 import { SidebarBgAnim, SidebarInnerAnim } from "@/utils/animations";
-import { cn } from "@/utils/cn";
 
 const Sidebar = ({ children }: { children: React.ReactNode }) => {
   const [sidebarOpen, setSidebarOpen] = React.useState(false);
@@ -30,7 +29,7 @@ const Sidebar = ({ children }: { children: React.ReactNode }) => {
               variants={SidebarInnerAnim}
               className="inner absolute h-screen right-0 max-w-[18rem] w-full top-0 bg-white text-black"
             >
-              <button className="hover:bg-slate-100 h-8 w-8 grid place-content-center duration-300 transition-all absolute right-1 top-1 rounded-full">
+              <button className="hover:bg-red-200 hover:text-white h-8 w-8 grid place-content-center duration-300 transition-all absolute right-1 top-1 rounded-full">
                 <FiX size={20} />
               </button>
 
