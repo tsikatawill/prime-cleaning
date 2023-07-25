@@ -1,8 +1,12 @@
+import Footer from "@/components/Footer";
+import GetAQuote from "@/components/GetAQuote";
 import Header from "@/components/Header";
 import Services from "@/components/Services";
 import Testimonial from "@/components/Testimonial";
 import WorkingDays from "@/components/WorkingDays";
 import Head from "next/head";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
   return (
@@ -18,13 +22,15 @@ export default function Home() {
         <link rel="icon" href="/images/favicon-light.svg" type="image/x-icon" />
       </Head>
 
+      <ToastContainer />
+
       <Header />
 
       <Services />
       <WorkingDays />
       <Testimonial />
-
-      <div className="space h-96"></div>
+      <GetAQuote />
+      <Footer />
     </>
   );
 }
