@@ -6,13 +6,13 @@ import { BiCalendar } from "react-icons/bi";
 const WorkingDays = () => {
   return (
     <section>
-      <Container className="pt-5 sm:pt-10">
+      <Container className="py-5 sm:py-10">
         <h2 className="font-bold text-3xl text-center">
-          Our <span className="text-primary">working times</span>
+          Our <span className="text-accent">working times</span>
         </h2>
 
         <div className="grid sm:grid-cols-2 gap-5 items-center mt-5">
-          <div className="left grid place-content-center">
+          <div className="left grid place-content-center max-w-[10rem] sm:max-w-xs mx-auto">
             <Image
               src="/images/calendar.png"
               width={250}
