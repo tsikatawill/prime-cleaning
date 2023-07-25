@@ -11,6 +11,7 @@ export const SERVICES: Service[] = [
         <HiOfficeBuilding size={25} />
       </>
     ),
+    image: "/images/office.jpg",
     description:
       "Elevate your workspace to new standards of cleanliness and productivity with our dedicated office cleaning service, designed to create a fresh and vibrant atmosphere for your team and clients.",
   },
@@ -21,6 +22,7 @@ export const SERVICES: Service[] = [
         <AiFillHome size={25} />
       </>
     ),
+    image: "/images/home.jpg",
     description:
       "Discover the joy of a pristine and inviting home with our professional cleaning service, where meticulous experts use eco-friendly products to create a healthy living environment.",
   },
@@ -31,6 +33,7 @@ export const SERVICES: Service[] = [
         <BiSolidChurch size={25} />
       </>
     ),
+    image: "/images/church.jpg",
     description:
       "Experience divine serenity in your sacred space as our respectful and attentive church cleaning service ensures every corner is immaculately maintained for worship and reflection.",
   },
@@ -41,6 +44,7 @@ export const SERVICES: Service[] = [
         <AiFillCar size={25} />
       </>
     ),
+    image: "/images/vehicle.avif",
     description:
       "Revitalize your ride with our expert vehicle cleaning service, leaving your car shining both inside and out, making every journey a source of pride and delight.",
   },
